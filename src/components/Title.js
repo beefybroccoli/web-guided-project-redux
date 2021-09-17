@@ -9,7 +9,7 @@ import TitleForm from './TitleForm';
 
 const Title = (props) => {
   const [state, dispatch] = useReducer(titleReducer, initialState);
-  console.log(props);
+  console.log('Title Props:', props);
 
   const handleToggleEditing = () => {
     dispatch(toggleEditing());
