@@ -10,13 +10,13 @@ import Title from './components/Title';
 import DragonList from './components/DragonList';
 import './styles.css';
 
-const appStore = createStore(titleReducer)
+const store = createStore(titleReducer)
 
 console.log('store:', store.getState());
 
 function App() {
   return (
-    <Provider store={appStore}>
+    <Provider store={stor}>
       <div className="App">
         <Title />
         <DragonList />
