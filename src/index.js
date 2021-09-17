@@ -11,7 +11,7 @@ import Title from './components/Title';
 import DragonList from './components/DragonList';
 import './styles.css';
 
-const appStore = createStore(titleReducer)
+const appStore = createStore(dragonReducer)
 
 console.log('store:', appStore.getState());
 
