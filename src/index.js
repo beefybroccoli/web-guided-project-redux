@@ -11,7 +11,7 @@ import './styles.css';
 
 const store = createStore(titleReducer)
 
-console.log('store:', store);
+console.log('store:', store.getState());
 
 function App() {
   return (
