@@ -17,3 +17,5 @@ const dragonReducer = (state, action) => {
       return state;
   }
 }
+
+export default dragonReducer
