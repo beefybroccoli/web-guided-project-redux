@@ -8,7 +8,7 @@ export const initialState = {
   
 const titleReducer = (state, action) => {
   switch (action.type) {
-    case UPDATE_TITLES:
+    case UPDATE_TITLE:
       return {
         ...state,
         title: action.payload,
