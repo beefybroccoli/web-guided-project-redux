@@ -8,7 +8,7 @@ import TitleDisplay from './TitleDisplay';
 import TitleForm from './TitleForm';
 
 const Title = (props) => {
-  const [state, dispatch] = useReducer(titleReducer, initialState);
+  // const [state, dispatch] = useReducer(titleReducer, initialState);
   console.log('Title Props:', props);
 
   const handleToggleEditing = () => {
@@ -34,7 +34,7 @@ const Title = (props) => {
 const mapStateToProps = (state) => {
   const epicNumber = state.favNumber * 11
   return ({
-    title: 'Ironman',
+    title: state.title,
     editing: state.editing,
     appName: state.appName,
     favNumber: state.favNumber,
