@@ -12,11 +12,11 @@ const Title = (props) => {
   console.log('Title Props:', props);
 
   const handleToggleEditing = () => {
-    dispatch(toggleEditing());
+    props.dispatch(toggleEditing());
   }
 
   const handleTitleUpdate = (title) => {
-    dispatch(updateTitle(title));
+    props.dispatch(updateTitle(title));
   }
 
   return (
