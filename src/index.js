@@ -4,7 +4,7 @@ import ReactDOM from 'react-dom';
 import { createStore } from 'redux'
 import { Provider } from 'react-redux';
 
-import reducer from './reducers';
+import appReducers from './reducers';
 // import titleReducer from './reducers/titleReducer';
 // import dragonReducer from './reducers/dragonReducer'
 
@@ -12,7 +12,7 @@ import Title from './components/Title';
 import DragonList from './components/DragonList';
 import './styles.css';
 
-const appStore = createStore(reducer)
+const appStore = createStore(appReducers)
 
 console.log('store:', appStore.getState());
 
