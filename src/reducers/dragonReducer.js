@@ -6,7 +6,7 @@ export const initialState = {
   ]
 }
 
-const dragonReducer = (state, action) => {
+export const dragonReducer = (state, action) => {
   switch (action.type) {
     case 'ADD_MEMBER': 
       return {
@@ -18,4 +18,3 @@ const dragonReducer = (state, action) => {
   }
 }
 
-export default dragonReducer
