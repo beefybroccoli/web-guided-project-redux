@@ -17,10 +17,10 @@ console.log('store:', store.getState());
 function App() {
   return (
     <Provider store={appStore}>
-    <div className="App">
-      <Title />
-      <DragonList />
-    </div>
+      <div className="App">
+        <Title />
+        <DragonList />
+      </div>
     </Provider>
   );
 }
