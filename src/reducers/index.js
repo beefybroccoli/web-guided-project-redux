@@ -4,6 +4,6 @@ import {dragonReducer} from "./dragonReducer";
 import {titleReducer} from "./titleReducer";
 
 export default combineReducers({
-  dragonReducer,
-  titleReducer
+  dragon: dragonReducer,
+  title: titleReducer
 })
