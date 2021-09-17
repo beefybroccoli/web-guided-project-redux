@@ -35,7 +35,8 @@ const mapStateToProps = (state) => {
   return ({
     title: state.title,
     editing: state.editing,
-    appName: state.appName 
+    appName: state.appName,
+    favNumber: state.favNumber,
   })
 }
 
