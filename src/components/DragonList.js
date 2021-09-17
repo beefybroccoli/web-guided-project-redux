@@ -30,7 +30,7 @@ class DragonList extends React.Component {
     return (
       <div>
         <div className="friends-list">
-          {state.members.map((member, index) => (
+          {this.props.members.map((member, index) => (
             <DragonMember key={index} member={member}/>
           ))}
         </div>
