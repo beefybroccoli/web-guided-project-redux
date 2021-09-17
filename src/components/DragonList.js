@@ -21,7 +21,7 @@ class DragonList extends React.Component {
   handleClick = ()=> {
     this.setState({
       ...this.state,
-      members: [...this.state.members, {name: this.state.newMember, dragonStatus: true}]
+      members: [...state.members, {name: this.state.newMember, dragonStatus: true}]
     })
   }
 
@@ -29,7 +29,7 @@ class DragonList extends React.Component {
     return (
       <div>
         <div className="friends-list">
-          {this.state.members.map((member, index) => (
+          {state.members.map((member, index) => (
             <DragonMember key={index} member={member}/>
           ))}
         </div>
