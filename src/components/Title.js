@@ -35,10 +35,10 @@ const Title = (props) => {
 const mapStateToProps = (state) => {
   const epicNumber = state.favNumber * 11
   return ({
-    title: state.title,
-    editing: state.editing,
-    appName: state.appName,
-    favNumber: state.favNumber,
+    title: state.title.title,
+    editing: state.title.editing,
+    appName: state.title.appName,
+    favNumber: state.title.favNumber,
     epicNumber,
   })
 }
