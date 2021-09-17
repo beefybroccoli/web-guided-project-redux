@@ -11,11 +11,9 @@ export const dragonReducer = (state = initialState, action) => {
   switch (action.type) {
     case ADD_MEMBER: 
       return {
-
         ...state,
-        members: [...state.members, {name: action.payload, dragonStatus: false}]
+        members: [...state.members, {name: action.payload, dragonStatus: true}]
       }
-    
     default: 
       return state;
   }
