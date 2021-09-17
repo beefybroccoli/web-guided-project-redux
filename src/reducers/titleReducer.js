@@ -7,7 +7,7 @@ export const initialState = {
     favNumber: 7,
   };
   
-const titleReducer = (state = initialState, action) => {
+  export const titleReducer = (state = initialState, action) => {
   switch (action.type) {
     case UPDATE_TITLE:
       return {
@@ -25,4 +25,3 @@ const titleReducer = (state = initialState, action) => {
   }
 };
 
-export default titleReducer;
