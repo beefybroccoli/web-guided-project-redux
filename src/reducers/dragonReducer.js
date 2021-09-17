@@ -12,7 +12,7 @@ export const dragonReducer = (state, action) => {
       return {
 
         ...state,
-        members: [...state.members, action.payload]
+        members: [...state.members, {name: action.payload, dragonStatus: false}]
       }
     
     default: 
