@@ -16,7 +16,7 @@ console.log('store:', store.getState());
 
 function App() {
   return (
-    <Provider store={stor}>
+    <Provider store={store}>
       <div className="App">
         <Title />
         <DragonList />
