@@ -5,6 +5,7 @@ import { createStore } from 'redux'
 import { Provider } from 'react-redux';
 
 import titleReducer from './reducers/titleReducer';
+import dragonReducer from './reducers/dragonReducer'
 
 import Title from './components/Title';
 import DragonList from './components/DragonList';
