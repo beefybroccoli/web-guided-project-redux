@@ -49,3 +49,4 @@ const mapStateToProps = (state) => {
 
 // export default connect(mapStateToProps, mapDispatchToProps)(Title);
 export default connect(mapStateToProps, { toggleEditing, updateTitle })(Title);
+// export default connect(null, { toggleEditing, updateTitle })(Title);
