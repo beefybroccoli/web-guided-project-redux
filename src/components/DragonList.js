@@ -1,5 +1,8 @@
+
 import React from 'react';
 import DragonMember from './DragonMember';
+
+import {connect} from 'react-redux'
 
 class DragonList extends React.Component {
 
@@ -42,4 +45,10 @@ class DragonList extends React.Component {
   }
 }
 
-export default DragonList;
+const mapStateToProps = (state) => {
+  return ({
+    members: state.members
+  })
+} 
+
+export default connect(mapStateToProps)(DragonList);
