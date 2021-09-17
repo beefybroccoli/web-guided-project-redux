@@ -11,7 +11,7 @@ export const dragonReducer = (state, action) => {
     case 'ADD_MEMBER': 
       return {
 
-        ...state
+        ...state,
         members: [...state.members, action.payload]
       }
     
