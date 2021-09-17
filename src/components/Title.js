@@ -42,9 +42,10 @@ const mapStateToProps = (state) => {
   })
 }
 
-const mapDispatchToProps = {
-  toggleEditing,
-  updateTitle
-}
+// const mapDispatchToProps = {
+//   toggleEditing,
+//   updateTitle
+// }
 
-export default connect(mapStateToProps, mapDispatchToProps)(Title);
+// export default connect(mapStateToProps, mapDispatchToProps)(Title);
+export default connect(mapStateToProps, { toggleEditing, updateTitle })(Title);
