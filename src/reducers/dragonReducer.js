@@ -1,3 +1,5 @@
+import { ADD_MEMBER } from "../actions/dragonActions";
+
 export const initialState = {
   newMember: '',
   members: [
@@ -8,7 +10,7 @@ export const initialState = {
 
 export const dragonReducer = (state, action) => {
   switch (action.type) {
-    case 'ADD_MEMBER': 
+    case ADD_MEMBER: 
       return {
 
         ...state,
