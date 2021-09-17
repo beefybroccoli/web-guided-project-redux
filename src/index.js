@@ -12,7 +12,7 @@ import Title from './components/Title';
 import DragonList from './components/DragonList';
 import './styles.css';
 
-const appStore = createStore(dragonReducer)
+const appStore = createStore(reducer)
 
 console.log('store:', appStore.getState());
 
