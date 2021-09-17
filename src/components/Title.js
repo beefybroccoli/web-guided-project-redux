@@ -1,4 +1,5 @@
 import React, { useReducer } from 'react';
+import { connect } from 'react-redux';
 
 import titleReducer, { initialState } from '../reducers/titleReducer';
 import { toggleEditing, updateTitle} from './../actions/titleActions';
@@ -6,8 +7,9 @@ import { toggleEditing, updateTitle} from './../actions/titleActions';
 import TitleDisplay from './TitleDisplay';
 import TitleForm from './TitleForm';
 
-const Title = () => {
+const Title = (props) => {
   const [state, dispatch] = useReducer(titleReducer, initialState);
+  console.log(props);
 
   const handleToggleEditing = () => {
     dispatch(toggleEditing());
@@ -29,4 +31,12 @@ const Title = () => {
   );
 };
 
-export default Title;
+const mapStateToProps = (state) => {
+  return ({
+    title: state.title,
+    editing: state.editing,
+    appName: state.appName 
+  })
+}
+
+export default connect(mapStateToProps)(Title);
