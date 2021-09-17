@@ -8,7 +8,7 @@ export const initialState = {
   ]
 }
 
-export const dragonReducer = (state, action) => {
+export const dragonReducer = (state = initialState, action) => {
   switch (action.type) {
     case ADD_MEMBER: 
       return {
