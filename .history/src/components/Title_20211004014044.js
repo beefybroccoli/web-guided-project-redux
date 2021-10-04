@@ -28,7 +28,6 @@ const Title = (props) => {
       {/* consumes resources from mapStateToProps */}
       {!props.editing ? (
         <TitleDisplay
-        {/* consumes resources from mapStateToProps */}
           title={props.title}
           handleToggleEditing={handleToggleEditing}
         />

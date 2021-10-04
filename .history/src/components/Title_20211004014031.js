@@ -25,10 +25,8 @@ const Title = (props) => {
     <div>
       {/* consumes resources from mapStateToProps */}
       <h1>{props.appName}</h1>
-      {/* consumes resources from mapStateToProps */}
       {!props.editing ? (
         <TitleDisplay
-        {/* consumes resources from mapStateToProps */}
           title={props.title}
           handleToggleEditing={handleToggleEditing}
         />

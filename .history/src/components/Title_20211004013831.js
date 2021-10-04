@@ -9,7 +9,7 @@ import TitleForm from "./TitleForm";
 import { connect } from "react-redux";
 
 const Title = (props) => {
-  // const [state, dispatch] = useReducer(titleReducer, initialState);
+  const [state, dispatch] = useReducer(titleReducer, initialState);
 
   console.log("props = ", props);
 
@@ -23,13 +23,10 @@ const Title = (props) => {
 
   return (
     <div>
-      {/* consumes resources from mapStateToProps */}
-      <h1>{props.appName}</h1>
-      {/* consumes resources from mapStateToProps */}
-      {!props.editing ? (
+      <h1>{state.appName}</h1>
+      {!state.editing ? (
         <TitleDisplay
-        {/* consumes resources from mapStateToProps */}
-          title={props.title}
+          title={state.title}
           handleToggleEditing={handleToggleEditing}
         />
       ) : (

@@ -8,10 +8,8 @@ import TitleForm from "./TitleForm";
 //import connect from react-redux
 import { connect } from "react-redux";
 
-const Title = (props) => {
-  // const [state, dispatch] = useReducer(titleReducer, initialState);
-
-  console.log("props = ", props);
+const Title = () => {
+  const [state, dispatch] = useReducer(titleReducer, initialState);
 
   const handleToggleEditing = () => {
     dispatch(toggleEditing());
@@ -23,13 +21,10 @@ const Title = (props) => {
 
   return (
     <div>
-      {/* consumes resources from mapStateToProps */}
-      <h1>{props.appName}</h1>
-      {/* consumes resources from mapStateToProps */}
-      {!props.editing ? (
+      <h1>{state.appName}</h1>
+      {!state.editing ? (
         <TitleDisplay
-        {/* consumes resources from mapStateToProps */}
-          title={props.title}
+          title={state.title}
           handleToggleEditing={handleToggleEditing}
         />
       ) : (
@@ -42,7 +37,7 @@ const Title = (props) => {
 //injects props directly into component
 const mapStateToProps = (state) => {
   console.log("state = ", state);
-  return { appName: state.appName, title: state.title, editing: state.editing };
+  return state;
 };
 
 //connect() return a function, which inject props into component

@@ -23,13 +23,11 @@ const Title = (props) => {
 
   return (
     <div>
-      {/* consumes resources from mapStateToProps */}
+      consumes resources from 
       <h1>{props.appName}</h1>
-      {/* consumes resources from mapStateToProps */}
-      {!props.editing ? (
+      {!state.editing ? (
         <TitleDisplay
-        {/* consumes resources from mapStateToProps */}
-          title={props.title}
+          title={state.title}
           handleToggleEditing={handleToggleEditing}
         />
       ) : (
