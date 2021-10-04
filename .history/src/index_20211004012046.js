@@ -18,12 +18,11 @@ console.log("store.getState() = ", store.getState());
 function App() {
   return (
     //connect application to the store
-    <Provider store={store}>
-      <div className="App">
-        <Title />
-        <DragonList />
-      </div>
-    </Provider>
+    <Provider>
+    <div className="App">
+      <Title />
+      <DragonList />
+    </div>
   );
 }
 

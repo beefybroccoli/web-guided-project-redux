@@ -18,7 +18,7 @@ console.log("store.getState() = ", store.getState());
 function App() {
   return (
     //connect application to the store
-    <Provider store={store}>
+    <Provider>
       <div className="App">
         <Title />
         <DragonList />
