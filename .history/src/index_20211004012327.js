@@ -28,5 +28,5 @@ function App() {
 }
 
 const rootElement = document.getElementById("root");
-//connect app
+//connect app 
 ReactDOM.render(<App />, rootElement);
